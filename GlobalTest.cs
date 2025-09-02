@@ -1,33 +1,9 @@
 ﻿using Serilog;
-using Serilog.Formatting.Compact;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Sockets;
 using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace PinPadTester
 {
-    public class FailInfo
-    {
-        public int SuccessesBefore { get; set; }
-        public DateTime FailTime { get; set; }
-        public string Message { get; set; }
-    }
-    public class Trans
-    {
-        public string BaseAmount { get; set; }
-        public string TipAmount { get; set; }
-    }
-    public class SaleData
-    {
-        public string Command { get; set; }
-        public string EcrId { get; set; }
-        public string RequestId { get; set; }
-        public Trans Transaction { get; set; }
-    }
     public enum ControlCodes : byte
     {
         STX = 0x02,
@@ -46,11 +22,6 @@ namespace PinPadTester
         COLON = 0x3A,
         PTGS = 0x7C,
         LF = 0x0A
-    }
-    public class GlobalMessage
-    {
-        public string Message { get; set; } = "MSG";
-        public SaleData Data { get; set; }
     }
 
 
