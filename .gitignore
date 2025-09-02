@@ -1,0 +1,25 @@
+.vs/
+.vscode/
+Encore/coverage
+Encore/coveragereport/
+Encore/wwwroot/
+**/node_modules/
+
+
+*.pdb
+.vscode/
+
+**/bin/
+**/obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.github/*.yml~
+.github/*.yml.un~
+.eslintcache
+.betterer.cache
+Logs/
